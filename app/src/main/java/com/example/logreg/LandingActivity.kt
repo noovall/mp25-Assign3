@@ -15,13 +15,11 @@ class LandingActivity : AppCompatActivity() {
         val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
 
-        // Ambil data nama dari Intent
         val userName = intent.getStringExtra("USER_NAME")
 
         tvWelcome.text = "Welcome, $userName!"
 
         btnLogout.setOnClickListener {
-            // Kembali ke LoginActivity
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }

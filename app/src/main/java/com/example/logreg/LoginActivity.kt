@@ -22,20 +22,17 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val tvRegister = findViewById<TextView>(R.id.tvRegister)
 
-        // Inisialisasi SharedPreferences
         sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE)
 
         btnLogin.setOnClickListener {
             val inputEmail = etEmail.text.toString()
             val inputPassword = etPassword.text.toString()
 
-            // Ambil data yang tersimpan
             val savedEmail = sharedPreferences.getString("Email", null)
             val savedPassword = sharedPreferences.getString("Password", null)
             val savedName = sharedPreferences.getString("Name", null)
 
             if (inputEmail == savedEmail && inputPassword == savedPassword) {
-                // Jika login berhasil, kirim data ke LandingActivity
                 val intent = Intent(this, LandingActivity::class.java)
                 intent.putExtra("USER_NAME", savedName)
                 startActivity(intent)
