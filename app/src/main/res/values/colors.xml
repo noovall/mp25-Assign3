@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#FF9800</color>  <!-- Oranye -->
+    <color name="primaryDarkColor">#E65100</color>  <!-- Oranye lebih gelap -->
+    <color name="accentColor">#000000</color>  <!-- Hitam -->
+    <color name="backgroundColor">#FFFFFF</color>  <!-- Putih -->
+    <color name="textColor">#212121</color>  <!-- Abu tua untuk teks -->
+    <color name="buttonTextColor">#FFFFFF</color>  <!-- Putih untuk teks tombol -->
+</resources>
